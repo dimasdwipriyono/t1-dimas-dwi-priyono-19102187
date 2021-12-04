@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FORM VAKSIN</title>
+  </head>
+  <body>
+    <h2>TUGAS PRAKTIKUM 2 </h2>
+    <p>Dimas Dwi Priyono - IF07TI1 - 19102187</p>
+    <br><br>
+
+    <form action="contact.php" method="POST">
+      <fieldset>
+        <legend>FORMULIR PENDAFTARAN VAKSIN 1</legend>
+        <p>
+          <label>Nama Lengkap:</label>
+          <br>
+          <input type="text" name="nama" placeholder="Nama Lengkap" />
+        </p>
+        <p>
+          <label>Tanggal Lahir:</label>
+          <br>
+          <input type="date" name="tanggal" />
+        </p>
+        <p>
+          <label>Umur:</label>
+          <input type="number" min="10" max="90" name="umur" />
+        </p>
+        <p>
+          <label>Alamat :</label>
+          <br>
+          <input type="text" name="username" placeholder="Alamat" />
+        </p>
+        <p>
+          <label>Email:</label>
+          <br>
+          <input type="email" name="email" placeholder="ex:dimasdwipr@gmail.com" />
+        </p>
+        <p>
+          <label>Password:</label>
+          <br>
+          <input type="password" name="password" placeholder="Password" />
+        </p>
+        <p>
+          <label>Jenis kelamin:</label>
+          <br>
+          <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+          <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+        </p>
+        <p>
+          <label>Agama:</label>
+          <br>
+          <select name="agama">
+            <option value="islam">Islam</option>
+            <option value="kristen">Kristen</option>
+            <option value="hindu">Hindu</option>
+            <option value="budha">Budha</option>
+          </select>
+        </p>
+        <p>
+          <label>Deskripsikan riwayat penyakit anda :</label>
+          <br>
+          <textarea name="Deskripsi riwayat penyakit"></textarea>
+        </p>
+        <label for="lname">Pilih lokasi vaksin :</label> <br />
+        <select name="cars" size="4" multiple>
+        <option value="volvo">RSUD Banyumas</option>
+        <option value="saab">Puskesmas Purwokerto</option>
+        <option value="viat">IT Telkom Purwokerto</option>
+        <option value="audi">PMI Sokaraja</option>
+        <option value="audi">Polsek Baturraden</option>
+      </select>
+        <p>
+          <label>Tautan link sosial media:</label>
+          <br>
+          <input type="url" name="name" placeholder="ex.instagram.com/dimasdwip" />
+        </p>
+        <p>Upload file ktp disini</p>
+        <input type="file" id="myFile" name="filename">
+        <br><br>
+        <p>
+          <input type="submit" name="submit" value="Daftar" />
+        </p>
+        
+      </fieldset>
+    </form>
+  </body>
+</html>
